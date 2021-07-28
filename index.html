@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>WeatherApp</title>
 </head>
 <body>
-    
+    <div class="app">
+        <div class="app-main">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Enter city name">
+            </div>
+
+            <div class="weather-content">
+                <div class="city-name">Ha Noi</div>
+                <div class="weather-state">Sun</div>
+                <img class="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                <div class="temple-wr"><span class="temple">26</span>°</div>
+            </div>
+        </div>
+        <div class="app-additional">
+            <div class="row">
+                <div class="item">
+                    <div class="item__label">Sunrise</div>
+                    <div class="item__value sunrise">05:00</div>
+                </div>
+                <div class="item">
+                    <div class="item__label">sunset</div>
+                    <div class="item__value sunset">18:00</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="item__label">Humidity</div>
+                    <div class="item__value"><span class="humidity">70</span>%</div>
+                </div>
+                <div class="item">
+                    <div class="item__label">wind speed</div>
+                    <div class="item__value"><span class="wind">3.3</span>m/s</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader">
+        <div class="loader__wr"><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" referrerpolicy="no-referrer"></script>
 </body>
 </html>
