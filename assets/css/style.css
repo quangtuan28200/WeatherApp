@@ -44,9 +44,7 @@ input{
 .app{
     height: 100vh;
     padding: 0 100px;
-    background-color: #eee;
-    background-image: url("../imgs/360_F_123291588_qnYx8pD2QpjPOsmdCINIouIjIWMzpv3W.jpg");
-    background-size: cover;
+    background-color: black;
 }
 
 @media screen and (max-width: 768px) {
@@ -123,6 +121,18 @@ input{
 
 .search-bar i{
     font-size: 1.8rem;
+}
+
+.search-bar span:hover{
+    cursor: pointer;
+}
+
+.microphone{
+    transition: .2s;
+}
+
+.recording{
+    opacity: .5;
 }
 
 .row{
